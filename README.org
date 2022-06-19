@@ -1,0 +1,3 @@
+#+title: ft_printf
+
+My own implementation of printf. made for École42 because ft_butnbr and ft_putstr aren't enough
