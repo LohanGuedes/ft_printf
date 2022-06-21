@@ -17,7 +17,7 @@ int	ft_printf(char *string, ...)
 			c_print += ft_push_right(string[offset], args);
 		}
 		c_print++;
-		ft_putchar_fd(string[offset], 1)
+		ft_putchar_fd(string[offset], 1);
 	}
 	va_end(args);
 	return (c_print);
