@@ -17,5 +17,5 @@ int	ft_push_right(char c, va_list args)
 	if (c == 'p')
 		return (ft_push_pointer(args));
 	if (c == '%')
-		return (ft_push_percent(args));
+		return (ft_push_percent());
 }

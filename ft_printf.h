@@ -16,8 +16,14 @@ int	ft_push_string(va_list args);
 
 int	ft_push_decimal(va_list args);
 
+int	ft_push_pointer(va_list args);
+
 int	ft_push_hex_lower(va_list args);
 
 int	ft_push_hex_upper(va_list args);
+
+int	ft_push_percent(void);
+
+int	ft_push_unsigned_decimal(va_list args);
 
 #endif // FT_PRINTF_H_
