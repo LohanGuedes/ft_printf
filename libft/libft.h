@@ -90,6 +90,8 @@ char	**ft_split(char const *s, char c);
 
 void	ft_putnbr_fd(int n, int fd);
 
+void	ft_puthexanbr_fd(int n, int fd, char *digits);
+
 t_list	*ft_lstnew(void *content);
 
 void	ft_lstadd_front(t_list **lst, t_list *new);

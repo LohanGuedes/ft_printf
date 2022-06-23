@@ -11,9 +11,9 @@ int	ft_push_right(char c, va_list args)
 	if (c == 'u')
 		return (ft_push_unsigned_decimal(args));
 	if (c == 'x')
-		return (ft_push_hex_low(args));
+		return (ft_push_hex_lower(args));
 	if (c == 'X')
-		return (ft_push_hex_caps(args));
+		return (ft_push_hex_upper(args));
 	if (c == 'p')
 		return (ft_push_pointer(args));
 	if (c == '%')
