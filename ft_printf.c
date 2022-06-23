@@ -1,5 +1,4 @@
 #include "ft_printf.h"
-#include "libft/libft.h"
 
 int	ft_printf(char *string, ...)
 {
@@ -8,15 +7,21 @@ int	ft_printf(char *string, ...)
 	va_list	args;
 
 	c_print = 0;
+	offset = 0;
 	va_start(args, string);
-	while (string[offset++])
+	while (string[offset])
 	{
 		if (string[offset] == '%' && ft_isplaceholder(string[offset + 1]))
 		{
-			c_print += ft_push_right(string[offset], args);
+			c_print += ft_push_right(string[offset + 1], args);
+			offset++;
 		}
-		c_print++;
-		ft_putchar_fd(string[offset], 1);
+		else
+		{
+			c_print++;
+			ft_putchar_fd(string[offset], 1);
+		}
+		offset++;
 	}
 	va_end(args);
 	return (c_print);

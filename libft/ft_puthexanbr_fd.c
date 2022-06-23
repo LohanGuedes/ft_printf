@@ -1,6 +1,6 @@
 #include "libft.h"
 
-void	ft_puthexanbr_fd(int n, int fd, char *digits)
+void	ft_puthexanbr_fd(unsigned long int n, int fd, char *digits)
 {
 	if(n < 16)
 	{

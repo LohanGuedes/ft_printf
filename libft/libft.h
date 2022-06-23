@@ -90,7 +90,7 @@ char	**ft_split(char const *s, char c);
 
 void	ft_putnbr_fd(long long n, int fd);
 
-void	ft_puthexanbr_fd(int n, int fd, char *digits);
+void	ft_puthexanbr_fd(unsigned long int n, int fd, char *digits);
 
 t_list	*ft_lstnew(void *content);
 

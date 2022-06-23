@@ -4,6 +4,8 @@
 # include "libft/libft.h"
 # include <stdarg.h>
 
+int	ft_printf(char *string, ...);
+
 int	ft_isplaceholder(char c);
 
 int	ft_push_right(char c, va_list args);
