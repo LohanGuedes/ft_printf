@@ -20,7 +20,6 @@ git clone https://github.com/peguimasid/42-Printf ft_printf
 
 ```C
 #include "ft_printf.h"
-#include <stdio.h>
 
 int	main(void)
 {
